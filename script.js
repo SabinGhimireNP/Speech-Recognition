@@ -14,7 +14,7 @@ recognition.addEventListener("result", (e) => {
     .map((result) => result[0])
     .map((result) => result.transcript)
     .join("");
-  console.log(e);
+  //console.log(e);
   p.innerHTML = transcript;
   if (e.results[0].isFinal) {
     p = document.createElement("p");
